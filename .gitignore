@@ -11,3 +11,4 @@ Logs/
 *.unityproj
 *.sln
 /Packages/packages-lock.json
+.vsconfig
