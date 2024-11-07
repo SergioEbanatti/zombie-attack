@@ -1,0 +1,2943 @@
+fileFormatVersion: 2
+guid: ee54ff50694b82744ae1ac7db1a347a8
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: controller_atlas_4x_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 772
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dad80247a284ea24c888ede8e4b72afc
+      internalID: 1463433281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_1
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 772
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd1f562f872d0b84cb40035a9b4ef06c
+      internalID: -1774738974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 772
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5591189115d9a4ea69ca86960c8e09
+      internalID: -1186129666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 772
+        width: 96
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47a0b277323a297418c6ff1be2ab33ed
+      internalID: 1136424060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_4
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 768
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16cd8ad45fa8d424eb94ec3acf82a715
+      internalID: 1047671730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_5
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 768
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99966467cebd36468edb5cef5eb4162
+      internalID: 1641024121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_6
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 772
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e885af26a87c73444a6335400be3dfe0
+      internalID: -602717000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_7
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 772
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35001055243345647a1e34b956b6c1e0
+      internalID: 1599092539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_8
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 772
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6e41873b42472940a3d45b28a3ac144
+      internalID: -1147358624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 772
+        width: 96
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd9a601f047d2ba4a92f5fcb57678d34
+      internalID: -562519744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_10
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 724
+        width: 88
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32e7ea91cb2921c42b1297f3d37b4e2a
+      internalID: -2011653228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_11
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 724
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3b780af52adb2d47889ac7db00a917c
+      internalID: -755304550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_12
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 724
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9956f4a52aa4ca4eac1de0d95eea5f9
+      internalID: -1257250807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_13
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 724
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 432e50c8ce1e6704e8f69a3e53b34388
+      internalID: -2045227813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_14
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 724
+        width: 96
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28741cc232bc83149adaced8cd5019b2
+      internalID: -1290456064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_15
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 672
+        width: 32
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d703718275930e4a80b769040301213
+      internalID: 502038508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_16
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 672
+        width: 32
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe3566555469bcb49bbcb224826a949f
+      internalID: -1296275069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_17
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 724
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 335518f6743203546b2a5ade808edb40
+      internalID: -624302490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_18
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 724
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 673ba7a638a4ed34f9d97b5d1bc03b2f
+      internalID: 1379202367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_19
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 724
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d185f953d36ba4388fa1fbf6220595
+      internalID: -864757574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_20
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 724
+        width: 96
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cc129e950183564fb41b0b13e93d675
+      internalID: 616084677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_21
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 676
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 516848bf840aaaa4ea2ea1b2d6dc5a45
+      internalID: 371874754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_22
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 676
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72886b8292c3f9640a245ff06a7153c9
+      internalID: 1164431524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_23
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 676
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73e94b17e776e094290a37b3ac9f719a
+      internalID: 1180572429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_24
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 680
+        width: 96
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a07a50c9718ca054fa75d624dc84c23e
+      internalID: 1349749867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_25
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 676
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e473cf37debf9174386c4b7253628da9
+      internalID: 1783369625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_26
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 676
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a83ff0adb4d2f6a4ab7b601a2c9a06e5
+      internalID: 231522817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_27
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 676
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae766e3d2e1dcea4aa1c786cf5146d75
+      internalID: -774329859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_28
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 676
+        width: 96
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51424f961b659eb4f83061b1eabf509c
+      internalID: -455251123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_29
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 628
+        width: 88
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1567f88aedd63f41bf49ffd0c97c039
+      internalID: -548013527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_30
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 628
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a7e71bab82e5540b17c8cce06844e1
+      internalID: 939069120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_31
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 628
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62d376100f4e8c4498534945981e0c89
+      internalID: 1457722058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_32
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 628
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a6ff3f501ff0e4a9bec4a791449417
+      internalID: -2013652674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_33
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 628
+        width: 96
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0b1ef64a989f524e9cae9cc4bec4c75
+      internalID: 1221380727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_34
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 624
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce3d7a679efdac840a4a3a5bfc70c9c8
+      internalID: 378735922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_35
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 624
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 524efaecd7f6da443aa0a08fd55cef74
+      internalID: -733896354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_36
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 628
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fd72ea68c80753428ea9f81d163b33e
+      internalID: -889879236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_37
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 628
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca0b7506976b8b24580fbeaf92534bd1
+      internalID: 1815898653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_38
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 628
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2730f2d3e9955b4cb107bfe49ee84a0
+      internalID: 27504274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_39
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 628
+        width: 96
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f2cc782528f55143be18dd94af39a47
+      internalID: 1689769666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_40
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 580
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2889b1debd54c4d43939152648648d7e
+      internalID: -2104154558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_41
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 580
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19836ac91efe1814484c076426d8ed41
+      internalID: 1270244234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_42
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 580
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9999da8f5532b724cbf90a8d9be82f5e
+      internalID: 725288901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_43
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 580
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 224a96b1fa5ebe544af83a68b69ed9b4
+      internalID: 1378232666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_44
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 580
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0313de37c75d2e44f9eee65e9e3cbacf
+      internalID: 90352974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_45
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 580
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87d4d525a17269e4293a8c08e53bf6d0
+      internalID: 527754678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_46
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 532
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2753fcf954a15874dbe5547db17e2d86
+      internalID: 365755005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_47
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 532
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69afed2b7c85ecd4cb81f170260c0dd0
+      internalID: 1542957703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_48
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 532
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 577576ed3e3b2a24b9422d8e378a9e49
+      internalID: -1298733362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_49
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 532
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1667fe27733c89a498614e9bda432057
+      internalID: 785661298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_50
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 532
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c58962ce1064b4bb42f9aec5bb64dc
+      internalID: -1788558808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_51
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 532
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b3749a63237ce04e8842b3e46a1280a
+      internalID: 811889903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_52
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 540
+        width: 288
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa329bff325bd794cae02b33e236dead
+      internalID: -13202045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_53
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 484
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c859364b6cfe9604cb511892921f426e
+      internalID: -946885889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_54
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 484
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2faba87225a8037439429ea7c3cb1eef
+      internalID: 756632851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_55
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 484
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bf9999884a7ecb40be382eeb6a1b589
+      internalID: 757016812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_56
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 484
+        width: 96
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fca0b02515c9aa9489d33b9e28cf2a08
+      internalID: -2099491960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_57
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 480
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4da4f00858b5fd946a11b5126d9620f6
+      internalID: 1854938169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_58
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 480
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47cb1d76e2f3b0f409b58a0d5a62b688
+      internalID: -1880942321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_59
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 484
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5beae032feb9ae4469f399ccb7557294
+      internalID: 2102870123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_60
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 484
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d0120bbab126d34bb4caacb22e9fd29
+      internalID: 2080889409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_61
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 484
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c0798f7f4b1594d8f1ad77d3a384fe
+      internalID: -1487021467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_62
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 484
+        width: 96
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eede78495911ce64485614796e483220
+      internalID: -628438239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_63
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 436
+        width: 88
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f427b33a64bb7244a3cb9ca1b757167
+      internalID: -102730236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_64
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 436
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d07d54e93ae8a42870bc2e66e171b7
+      internalID: 2131221311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_65
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 436
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 421037c7c03644a4190d0bb5c647e7dd
+      internalID: -455896135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_66
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 436
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45be4bba53ff66043ad6657f04c5c62c
+      internalID: 1300955462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_67
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 436
+        width: 96
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b772e84f33407d64688f510c143beeae
+      internalID: -190168173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_68
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 384
+        width: 32
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4030aaf46ed77b49aebee4acd74e3c3
+      internalID: -200578975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_69
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 384
+        width: 32
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bbd8197ce08dee4fb56c40cf771214e
+      internalID: -884268728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_70
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 436
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84754f39823fbbf4da57039de839f24d
+      internalID: -1177319353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_71
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 436
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7fc7555c632a98419e406dec78fe9cb
+      internalID: -2121368821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_72
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 436
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42fb896ef095b7944a7e194f3488ddd3
+      internalID: -1512272836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_73
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 436
+        width: 96
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b47a6f56a7da5b48bc5af425c5c1e40
+      internalID: 97955262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_74
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 388
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b9bcfe62dcbd3d4586f87d80369625f
+      internalID: -2109652465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_75
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 388
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 428e4464062e6304088ab86cc5bd3310
+      internalID: -367424248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_76
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 388
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 299fb90071f3ba94e8f6bf93732af771
+      internalID: -42555684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_77
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 392
+        width: 96
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b924f4a5e07d1e4398e0d2a5b9c0553
+      internalID: 1075191092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_78
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 388
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fcf691146cabdc4c8025a04691293f7
+      internalID: -341466295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_79
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 388
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b37518b8a57d843be3bfa35f58e7bc
+      internalID: -987770530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_80
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 388
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae89f32697655f14aa2f60df7a08d80e
+      internalID: -1410406058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_81
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 388
+        width: 96
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4b98fea2611c2640a964bddb0680b29
+      internalID: -849860898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_82
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 340
+        width: 88
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e32f2cbf8a8d1c8428dc159ed7303633
+      internalID: 936641881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_83
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 340
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa5e590b3396b2d45bc280189caae76d
+      internalID: 661718145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_84
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 340
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c94bc8d55adf33429f5b3cf9f2cd352
+      internalID: 1798946896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_85
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 340
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 726c78ced7c524d4a84b448b011e11b9
+      internalID: 1657194468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_86
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 340
+        width: 96
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef2777e1097dcd45856facfa225c8b3
+      internalID: -1407893754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_87
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 336
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 106c9cd1d36301341b330f76a0d08af0
+      internalID: -984481849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_88
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 336
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6deab372f3c6a1041b84e2eb1251a410
+      internalID: 500114061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_89
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 340
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f1c5638ab3d8c84b8b45e9f4548ebb5
+      internalID: 2034666665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_90
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 340
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9d54ab8dede52e43912bd5741fe63e8
+      internalID: 1725294821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_91
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 340
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f71a2caca15a14142a09f96c151d7842
+      internalID: -308459174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_92
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 340
+        width: 96
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6724c922a1dacd44bc5ca403b8732f3
+      internalID: -1790614953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_93
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 292
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d180c03cc7afbb74f86cff4ce3e51187
+      internalID: -1348196536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_94
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 292
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b88c8250a266bc4c89742ddd6b051dd
+      internalID: 166959471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_95
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 292
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894568641fd0ef14ca5b36d55abce947
+      internalID: 229259488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_96
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 292
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f4eb7dfd461a94982e2c52e8af90d9
+      internalID: -944652214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_97
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 292
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c17b8dd0ebbf844c9a6d6f3feccb56b
+      internalID: -2041965634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_98
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 292
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a116eafbd8fb06c4db0cb4789e50790f
+      internalID: -2069582721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_99
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 248
+        width: 288
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1e849b78a228d4a85c4895ef625b79
+      internalID: 671377755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_100
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 240
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b31936c9e6df6bb4da463c9cdf6771a3
+      internalID: -1649962547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_101
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27e4612f7b478647977d775b9866d4e
+      internalID: 1593676075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_102
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3356d421e0565e64793987235aab9f7c
+      internalID: -1152882289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_103
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 240
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdb453e97651a46469843cc46a0ad192
+      internalID: 219452707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_104
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feafa9f02a9c50c42b2f9689ab88c1d4
+      internalID: -1359548151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_105
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 240
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55b23d2a37208ab44ba596905c1847bf
+      internalID: -749971213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_106
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 152
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3064143e57bc8d4fa545b7ccac780fe
+      internalID: 1535032898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_107
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 144
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 724bab41f7e249f48a83c392d6b514cf
+      internalID: 450412161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_108
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 104
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ec56a2b979cc7499ba341af5a051b1
+      internalID: 75926069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_109
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 152
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db8a4146535ab54b85845f15b95d5f7
+      internalID: 600518644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_110
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 152
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483ee94c375d55a49a6d2ea458aea033
+      internalID: -1125942513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_111
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 96
+        width: 192
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a9a026b84351c5498e98e1e13be1c34
+      internalID: -699745412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_112
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 104
+        width: 80
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f21e75dd8cf57bb458d933d3ea8f73f4
+      internalID: 1793676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_113
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 100
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81be10b0f4e53cf439e18c3c890b9804
+      internalID: -1679750752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_114
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 120
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 568d86da366ce4249919f7171ff58ced
+      internalID: -1213244138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_115
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53367c9f7dafb6f428fbe2d15251b920
+      internalID: 1642618137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_116
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ef5895061807894b99278ecaccba089
+      internalID: -1134410106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_117
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 4
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d45a9d00c03334ab95840b5f4326d1
+      internalID: 718570789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_118
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 52
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e7c25e4bde55134abc374de54b5a708
+      internalID: -1350018983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_119
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 68
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0df80430a535eb46975e50ccc092da9
+      internalID: 1085300772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_120
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 8
+        width: 96
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a5695ee09a334440ada4446e04c6181
+      internalID: -454300809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_121
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 96
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b0d283f6a701fa4db86f6580f8dcfb4
+      internalID: 152328034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_122
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 140
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fb7b0dcf193f8546ad8d3181a2030f9
+      internalID: -20492690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_123
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 140
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 327e39d5e33477546bc6d6142176e94e
+      internalID: -1096362651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_124
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 104
+        width: 39
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54494b11cb4e3fd499b0a861833b39d5
+      internalID: -1077163336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_125
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 104
+        width: 41
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1601a142f74167b4a9aa1982d7b10aae
+      internalID: 234040269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_126
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 104
+        width: 40
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e7cb7397fcd81040a4e2b7a7225c23d
+      internalID: -974003647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controller_atlas_4x_127
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 104
+        width: 41
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd264b7e2ae96924389cf73fcfa79ea1
+      internalID: 1535874640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      controller_atlas_4x_0: 1463433281
+      controller_atlas_4x_1: -1774738974
+      controller_atlas_4x_10: -2011653228
+      controller_atlas_4x_100: -1649962547
+      controller_atlas_4x_101: 1593676075
+      controller_atlas_4x_102: -1152882289
+      controller_atlas_4x_103: 219452707
+      controller_atlas_4x_104: -1359548151
+      controller_atlas_4x_105: -749971213
+      controller_atlas_4x_106: 1535032898
+      controller_atlas_4x_107: 450412161
+      controller_atlas_4x_108: 75926069
+      controller_atlas_4x_109: 600518644
+      controller_atlas_4x_11: -755304550
+      controller_atlas_4x_110: -1125942513
+      controller_atlas_4x_111: -699745412
+      controller_atlas_4x_112: 1793676
+      controller_atlas_4x_113: -1679750752
+      controller_atlas_4x_114: -1213244138
+      controller_atlas_4x_115: 1642618137
+      controller_atlas_4x_116: -1134410106
+      controller_atlas_4x_117: 718570789
+      controller_atlas_4x_118: -1350018983
+      controller_atlas_4x_119: 1085300772
+      controller_atlas_4x_12: -1257250807
+      controller_atlas_4x_120: -454300809
+      controller_atlas_4x_121: 152328034
+      controller_atlas_4x_122: -20492690
+      controller_atlas_4x_123: -1096362651
+      controller_atlas_4x_124: -1077163336
+      controller_atlas_4x_125: 234040269
+      controller_atlas_4x_126: -974003647
+      controller_atlas_4x_127: 1535874640
+      controller_atlas_4x_13: -2045227813
+      controller_atlas_4x_14: -1290456064
+      controller_atlas_4x_15: 502038508
+      controller_atlas_4x_16: -1296275069
+      controller_atlas_4x_17: -624302490
+      controller_atlas_4x_18: 1379202367
+      controller_atlas_4x_19: -864757574
+      controller_atlas_4x_2: -1186129666
+      controller_atlas_4x_20: 616084677
+      controller_atlas_4x_21: 371874754
+      controller_atlas_4x_22: 1164431524
+      controller_atlas_4x_23: 1180572429
+      controller_atlas_4x_24: 1349749867
+      controller_atlas_4x_25: 1783369625
+      controller_atlas_4x_26: 231522817
+      controller_atlas_4x_27: -774329859
+      controller_atlas_4x_28: -455251123
+      controller_atlas_4x_29: -548013527
+      controller_atlas_4x_3: 1136424060
+      controller_atlas_4x_30: 939069120
+      controller_atlas_4x_31: 1457722058
+      controller_atlas_4x_32: -2013652674
+      controller_atlas_4x_33: 1221380727
+      controller_atlas_4x_34: 378735922
+      controller_atlas_4x_35: -733896354
+      controller_atlas_4x_36: -889879236
+      controller_atlas_4x_37: 1815898653
+      controller_atlas_4x_38: 27504274
+      controller_atlas_4x_39: 1689769666
+      controller_atlas_4x_4: 1047671730
+      controller_atlas_4x_40: -2104154558
+      controller_atlas_4x_41: 1270244234
+      controller_atlas_4x_42: 725288901
+      controller_atlas_4x_43: 1378232666
+      controller_atlas_4x_44: 90352974
+      controller_atlas_4x_45: 527754678
+      controller_atlas_4x_46: 365755005
+      controller_atlas_4x_47: 1542957703
+      controller_atlas_4x_48: -1298733362
+      controller_atlas_4x_49: 785661298
+      controller_atlas_4x_5: 1641024121
+      controller_atlas_4x_50: -1788558808
+      controller_atlas_4x_51: 811889903
+      controller_atlas_4x_52: -13202045
+      controller_atlas_4x_53: -946885889
+      controller_atlas_4x_54: 756632851
+      controller_atlas_4x_55: 757016812
+      controller_atlas_4x_56: -2099491960
+      controller_atlas_4x_57: 1854938169
+      controller_atlas_4x_58: -1880942321
+      controller_atlas_4x_59: 2102870123
+      controller_atlas_4x_6: -602717000
+      controller_atlas_4x_60: 2080889409
+      controller_atlas_4x_61: -1487021467
+      controller_atlas_4x_62: -628438239
+      controller_atlas_4x_63: -102730236
+      controller_atlas_4x_64: 2131221311
+      controller_atlas_4x_65: -455896135
+      controller_atlas_4x_66: 1300955462
+      controller_atlas_4x_67: -190168173
+      controller_atlas_4x_68: -200578975
+      controller_atlas_4x_69: -884268728
+      controller_atlas_4x_7: 1599092539
+      controller_atlas_4x_70: -1177319353
+      controller_atlas_4x_71: -2121368821
+      controller_atlas_4x_72: -1512272836
+      controller_atlas_4x_73: 97955262
+      controller_atlas_4x_74: -2109652465
+      controller_atlas_4x_75: -367424248
+      controller_atlas_4x_76: -42555684
+      controller_atlas_4x_77: 1075191092
+      controller_atlas_4x_78: -341466295
+      controller_atlas_4x_79: -987770530
+      controller_atlas_4x_8: -1147358624
+      controller_atlas_4x_80: -1410406058
+      controller_atlas_4x_81: -849860898
+      controller_atlas_4x_82: 936641881
+      controller_atlas_4x_83: 661718145
+      controller_atlas_4x_84: 1798946896
+      controller_atlas_4x_85: 1657194468
+      controller_atlas_4x_86: -1407893754
+      controller_atlas_4x_87: -984481849
+      controller_atlas_4x_88: 500114061
+      controller_atlas_4x_89: 2034666665
+      controller_atlas_4x_9: -562519744
+      controller_atlas_4x_90: 1725294821
+      controller_atlas_4x_91: -308459174
+      controller_atlas_4x_92: -1790614953
+      controller_atlas_4x_93: -1348196536
+      controller_atlas_4x_94: 166959471
+      controller_atlas_4x_95: 229259488
+      controller_atlas_4x_96: -944652214
+      controller_atlas_4x_97: -2041965634
+      controller_atlas_4x_98: -2069582721
+      controller_atlas_4x_99: 671377755
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
