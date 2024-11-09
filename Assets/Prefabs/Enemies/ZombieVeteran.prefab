@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5532016533124247019}
   - component: {fileID: 6647419549818639498}
   - component: {fileID: 2805989856350420184}
+  - component: {fileID: 655859068034245663}
   m_Layer: 0
   m_Name: ZombieVeteran
   m_TagString: Untagged
@@ -134,7 +135,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f5717e86f365db468aa72da4803fe22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerTransform: {fileID: 8786463247290762982, guid: 1a6d4c6202091e147965f7bdb493bdff, type: 3}
 --- !u!114 &2805989856350420184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,3 +150,30 @@ MonoBehaviour:
   _moveSpeed: 3
   _health: 10
   scoreValue: 12
+--- !u!50 &655859068034245663
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222757156563510391}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2588809181653308273
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3589193282926790086}
+  - component: {fileID: 780509446212115332}
+  m_Layer: 0
+  m_Name: ZombieSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3589193282926790086
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2588809181653308273}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 200.4135, y: 204.53151, z: 0.7888167}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &780509446212115332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2588809181653308273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b605564cd9bccba42ab8dd6f855b5393, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _zombieSpawnInfos:
+  - _zombiePrefab: {fileID: 6823272862821391794, guid: feab7387c3eeee440bad5f801b4cfa3a, type: 3}
+    _chance: 60
+  - _zombiePrefab: {fileID: 222757156563510391, guid: 8e8b75a3f8ed0a94fbebe23797358a77, type: 3}
+    _chance: 30
+  - _zombiePrefab: {fileID: 2889739243567708207, guid: 1769f86f8017a4c45ad3080020c67c91, type: 3}
+    _chance: 10
+  _maxZombies: 10
+  _spawnInterval: 2
+  _decreasingSpawnInterval: 0.1
+  edgePadding: 1

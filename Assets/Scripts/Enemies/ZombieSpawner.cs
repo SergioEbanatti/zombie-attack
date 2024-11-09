@@ -17,14 +17,11 @@ public class ZombieSpawnInfo
 public class ZombieSpawner : MonoBehaviour
 {
     [Header("Settings")]
-
     [SerializeField] private ZombieSpawnInfo[] _zombieSpawnInfos; // Массив информации о спавне зомби
 
     [SerializeField]
     [Tooltip("Рекомендуемое значение: 10")]
     private int _maxZombies = 10;
-
-    [Header("Spawn Settings")]
 
     [SerializeField]
     [Tooltip("Рекомендуемое значение: 2")]
@@ -40,7 +37,6 @@ public class ZombieSpawner : MonoBehaviour
 
     private float[] _cumulativeChances; // Кумулятивный массив вероятностей
     private float _timeSinceLastSpawn = 0f; // Время с последнего спавна
-    private int _currentZombieCount = 0; // Текущее количество зомби на сцене
     private Camera _mainCamera;
 
     public enum SpawnEdge { Left, Right, Top }
@@ -53,15 +49,14 @@ public class ZombieSpawner : MonoBehaviour
     private void Update()
     {
         // Спавним зомби каждые _spawnInterval секунд, если на сцене их меньше максимального количества
-        if (_currentZombieCount < _maxZombies)
+        if (ZombieManager.Instance.CurrentZombieCount < _maxZombies)
         {
             _timeSinceLastSpawn += Time.deltaTime;
-
             if (_timeSinceLastSpawn >= _spawnInterval)
             {
                 SpawnZombie();
-                _timeSinceLastSpawn = 0f; // Сбрасываем таймер
-                _spawnInterval = Mathf.Max(0.5f, _spawnInterval - _decreasingSpawnInterval); // Уменьшаем интервал
+                _timeSinceLastSpawn = 0f;
+                _spawnInterval = Mathf.Max(0.5f, _spawnInterval - _decreasingSpawnInterval);
             }
         }
     }
@@ -73,7 +68,8 @@ public class ZombieSpawner : MonoBehaviour
         Vector3 spawnPosition = GetRandomSpawnPosition(randomEdge);
 
         Instantiate(zombie, spawnPosition, Quaternion.identity);
-        _currentZombieCount++;
+        // Уведомляем ZombieManager о спавне нового зомби
+        ZombieManager.Instance.OnZombieSpawned();
     }
 
     /// <summary>

@@ -11,8 +11,6 @@ public class Zombie : MonoBehaviour
     [Header("Очки")]
     [SerializeField] private int scoreValue = 7;
 
-    private ZombieMovement zombieMovement;
-
     #region Свойства
     public float MoveSpeed
     {
@@ -27,9 +25,14 @@ public class Zombie : MonoBehaviour
     }
     #endregion
 
-    private void Awake()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        zombieMovement = GetComponent<ZombieMovement>();
+
+        
+        if (collision.gameObject.TryGetComponent<DeathHandler>(out var deathHandler))
+        {
+            deathHandler.Die();
+        }
     }
 
     public void TakeDamage(int damage)
@@ -41,6 +44,7 @@ public class Zombie : MonoBehaviour
 
     private void Die()
     {
-        Destroy(gameObject); 
+        ZombieManager.Instance.OnZombieDied();
+        Destroy(gameObject);
     }
 }

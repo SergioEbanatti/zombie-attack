@@ -1,0 +1,72 @@
+{
+    "name": "PlayerControls",
+    "maps": [
+        {
+            "name": "Gameplay",
+            "id": "f70d9a7f-446f-43b3-afa6-d1c1aec4efce",
+            "actions": [
+                {
+                    "name": "ChangeFirePoint",
+                    "type": "Value",
+                    "id": "149d92b7-2e5f-4d24-940d-ab48449ee2fc",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "1a3d7bd4-03ce-44fc-af76-c892e7c98de4",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MouseAndKeyboard",
+                    "action": "ChangeFirePoint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c3c36023-cfcf-4177-b23b-270507f449d2",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "ChangeFirePoint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "45e4021b-b22a-4270-b9aa-fc09de1fb5c3",
+                    "path": "<Touchscreen>/primaryTouch/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "TouchScreen",
+                    "action": "ChangeFirePoint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "MouseAndKeyboard",
+            "bindingGroup": "MouseAndKeyboard",
+            "devices": []
+        },
+        {
+            "name": "Gamepad",
+            "bindingGroup": "Gamepad",
+            "devices": []
+        },
+        {
+            "name": "TouchScreen",
+            "bindingGroup": "TouchScreen",
+            "devices": []
+        }
+    ]
+}
