@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 8857697270860780556}
   - component: {fileID: 1967016263194958502}
   - component: {fileID: 3862038196560859772}
-  m_Layer: 0
+  - component: {fileID: 7817562160031002147}
+  m_Layer: 8
   m_Name: ZombieArmored
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,6 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moveSpeed: 1
   _health: 50
+  _damage: 1
   scoreValue: 30
 --- !u!50 &3862038196560859772
 Rigidbody2D:
@@ -177,3 +179,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &7817562160031002147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2889739243567708207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8cb122533d6f814093ba6eafe359ddd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 50

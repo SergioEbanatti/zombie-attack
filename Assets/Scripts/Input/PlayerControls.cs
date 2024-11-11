@@ -72,6 +72,12 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""UI"",
+            ""id"": ""454b2e18-bd74-43c9-b609-421a88ce1528"",
+            ""actions"": [],
+            ""bindings"": []
         }
     ],
     ""controlSchemes"": [
@@ -95,6 +101,8 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         // Gameplay
         m_Gameplay = asset.FindActionMap("Gameplay", throwIfNotFound: true);
         m_Gameplay_ChangeFirePoint = m_Gameplay.FindAction("ChangeFirePoint", throwIfNotFound: true);
+        // UI
+        m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -198,6 +206,44 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         }
     }
     public GameplayActions @Gameplay => new GameplayActions(this);
+
+    // UI
+    private readonly InputActionMap m_UI;
+    private List<IUIActions> m_UIActionsCallbackInterfaces = new List<IUIActions>();
+    public struct UIActions
+    {
+        private @PlayerControls m_Wrapper;
+        public UIActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
+        public InputActionMap Get() { return m_Wrapper.m_UI; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(UIActions set) { return set.Get(); }
+        public void AddCallbacks(IUIActions instance)
+        {
+            if (instance == null || m_Wrapper.m_UIActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_UIActionsCallbackInterfaces.Add(instance);
+        }
+
+        private void UnregisterCallbacks(IUIActions instance)
+        {
+        }
+
+        public void RemoveCallbacks(IUIActions instance)
+        {
+            if (m_Wrapper.m_UIActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IUIActions instance)
+        {
+            foreach (var item in m_Wrapper.m_UIActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_UIActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public UIActions @UI => new UIActions(this);
     private int m_MouseAndKeyboardSchemeIndex = -1;
     public InputControlScheme MouseAndKeyboardScheme
     {
@@ -228,5 +274,8 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     public interface IGameplayActions
     {
         void OnChangeFirePoint(InputAction.CallbackContext context);
+    }
+    public interface IUIActions
+    {
     }
 }

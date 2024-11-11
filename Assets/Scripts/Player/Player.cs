@@ -2,11 +2,34 @@
 
 public class Player : MonoBehaviour
 {
-    private void Start()
+    private DamageHandler _damageHandler;
+
+
+
+    private void Awake()
     {
-        // Регистрируем игрока в GameManager
+        _damageHandler = GetComponent<DamageHandler>(); // Получаем ссылку на DamageHandler
+        _damageHandler.OnDeath += HandleDeath; // Подписываемся на событие смерти
+    }
+
+    private void OnEnable()
+    {
+        InvokeRepeating(nameof(TryRegisterPlayer), 0f, 0.1f);
+    }
+
+    private void TryRegisterPlayer()
+    {
+        // Проверяем, доступен ли GameManager и существует ли его Instance
         if (GameManager.Instance != null)
+        {
             GameManager.Instance.RegisterPlayer(transform);
+            CancelInvoke(nameof(TryRegisterPlayer)); // Прекращаем вызов после успешной регистрации
+        }
+    }
+
+    private void RegisterPlayer()
+    {
+        GameManager.Instance.RegisterPlayer(transform);
     }
 
     // Метод для поворота игрока в сторону стрельбы
@@ -21,5 +44,16 @@ public class Player : MonoBehaviour
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
         transform.rotation = Quaternion.Euler(0f, 0f, angle);
+    }
+
+    private void HandleDeath()
+    {
+        // Логика окончания игры
+        GameManager.Instance.EndGame();
+    }
+
+    private void OnDestroy()
+    {
+        _damageHandler.OnDeath -= HandleDeath; // Отписка от события, если объект уничтожен
     }
 }

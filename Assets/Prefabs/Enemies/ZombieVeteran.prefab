@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 6647419549818639498}
   - component: {fileID: 2805989856350420184}
   - component: {fileID: 655859068034245663}
-  m_Layer: 0
+  - component: {fileID: 6230868718469360722}
+  m_Layer: 8
   m_Name: ZombieVeteran
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,6 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moveSpeed: 3
   _health: 10
+  _damage: 1
   scoreValue: 12
 --- !u!50 &655859068034245663
 Rigidbody2D:
@@ -177,3 +179,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &6230868718469360722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222757156563510391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8cb122533d6f814093ba6eafe359ddd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 10

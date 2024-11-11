@@ -2,9 +2,9 @@
 
 public class Bullet : MonoBehaviour
 {
-    private Vector2 _direction;
     [SerializeField] private float _speed = 10f;
-    [SerializeField] private int damage = 1; 
+    [SerializeField] private int damage = 1;
+    private Vector2 _direction;
 
     private void Update()
     {
@@ -18,10 +18,9 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Zombie zombie = collision.GetComponent<Zombie>();
-        if (zombie != null)
+        if (collision.TryGetComponent<IDamageable>(out var damageable))
         {
-            zombie.TakeDamage(damage);
+            damageable.TakeDamage(damage);
             BulletPool.Instance.ReturnBulletToPool(this);
         }
     }
