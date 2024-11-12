@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 4177006514507410792}
   - component: {fileID: 3062874343833246723}
   - component: {fileID: 7174005916367740651}
+  - component: {fileID: 3862038196560859772}
   - component: {fileID: 8857697270860780556}
   - component: {fileID: 1967016263194958502}
-  - component: {fileID: 3862038196560859772}
-  - component: {fileID: 7817562160031002147}
+  - component: {fileID: 1694500274415129913}
   m_Layer: 8
   m_Name: ZombieArmored
   m_TagString: Untagged
@@ -123,35 +123,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.215
---- !u!114 &8857697270860780556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2889739243567708207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f5717e86f365db468aa72da4803fe22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1967016263194958502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2889739243567708207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3e74020d3e054345b33452ff6d47b6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _moveSpeed: 1
-  _health: 50
-  _damage: 1
-  scoreValue: 30
+  m_Radius: 0.3
 --- !u!50 &3862038196560859772
 Rigidbody2D:
   serializedVersion: 4
@@ -179,7 +151,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &7817562160031002147
+--- !u!114 &8857697270860780556
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -188,7 +160,34 @@ MonoBehaviour:
   m_GameObject: {fileID: 2889739243567708207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8cb122533d6f814093ba6eafe359ddd, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f5717e86f365db468aa72da4803fe22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1967016263194958502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2889739243567708207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3e74020d3e054345b33452ff6d47b6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _moveSpeed: 1
+  _damage: 1
+  _scoreValue: 30
+--- !u!114 &1694500274415129913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2889739243567708207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724baafedbf27fb45a4fa916e97217cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 50

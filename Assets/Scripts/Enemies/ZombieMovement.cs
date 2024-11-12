@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 [RequireComponent(typeof(Zombie))]
 public class ZombieMovement : MonoBehaviour
@@ -7,23 +6,39 @@ public class ZombieMovement : MonoBehaviour
     private Transform _playerTransform;
     private bool _hasPlayer;
 
-    private Zombie _zombie;  // Ссылка на компонент Zombie
-    private Vector3 _directionToPlayer; // Направление к игроку
+    private Zombie _zombie;
+    private Vector3 _directionToPlayer;
 
     private void Start()
     {
         _zombie = GetComponent<Zombie>();
+    }
 
-        // Получаем ссылку на игрока из GameManager
-        if (GameManager.Instance != null && GameManager.Instance.PlayerTransform != null)
+    private void OnEnable()
+    {
+        // Подписываемся на изменение состояния игрока
+        if (GameManager.Instance != null)
         {
-            _playerTransform = GameManager.Instance.PlayerTransform;
             _hasPlayer = GameManager.Instance.HasPlayer;
-            GameManager.Instance.OnPlayerStatusChanged += UpdatePlayerStatus; // Подписываемся на изменения состояния
+            _playerTransform = GameManager.Instance.PlayerTransform;
+            GameManager.Instance.OnPlayerStatusChanged += UpdatePlayerStatus;
         }
         else
             Debug.LogError("Игрок не зарегистрирован в GameManager");
     }
+
+    private void OnDisable()
+    {
+        UnsubscribeFromDeathEvent();
+    }
+
+
+    private void OnDestroy()
+    {
+        UnsubscribeFromDeathEvent();
+    }
+
+
 
     private void Update()
     {
@@ -34,6 +49,15 @@ public class ZombieMovement : MonoBehaviour
             LookAtPlayer();
         }
 
+    }
+
+    /// <summary>
+    /// Отписка от события
+    /// </summary>
+    private void UnsubscribeFromDeathEvent()
+    {
+        if (GameManager.Instance != null)
+            GameManager.Instance.OnPlayerStatusChanged -= UpdatePlayerStatus; // Отписываемся от события
     }
 
     private void UpdatePlayerStatus()
@@ -55,17 +79,11 @@ public class ZombieMovement : MonoBehaviour
 
     private void LookAtPlayer()
     {
-        float angle = Mathf.Atan2(_directionToPlayer.y, _directionToPlayer.x) * Mathf.Rad2Deg;
-
-        // Применяем поворот (вращение по оси Z)
-        transform.rotation = Quaternion.Euler(0f, 0f, angle);
+        // Вычисляем угол поворота, чтобы смотреть на игрока
+        if (_directionToPlayer.sqrMagnitude > 0.001f) // Предотвращаем малые значения
+        {
+            float angle = Mathf.Atan2(_directionToPlayer.y, _directionToPlayer.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(0f, 0f, angle);
+        }
     }
-
-    private void OnDestroy()
-    {
-        if (GameManager.Instance != null)
-            GameManager.Instance.OnPlayerStatusChanged -= UpdatePlayerStatus; // Отписываемся от события
-    }
-
-
 }

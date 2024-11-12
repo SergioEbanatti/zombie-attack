@@ -29,17 +29,6 @@
                 },
                 {
                     "name": "",
-                    "id": "c3c36023-cfcf-4177-b23b-270507f449d2",
-                    "path": "<Gamepad>/rightStick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
-                    "action": "ChangeFirePoint",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "45e4021b-b22a-4270-b9aa-fc09de1fb5c3",
                     "path": "<Touchscreen>/primaryTouch/position",
                     "interactions": "",
@@ -50,29 +39,35 @@
                     "isPartOfComposite": false
                 }
             ]
-        },
-        {
-            "name": "UI",
-            "id": "454b2e18-bd74-43c9-b609-421a88ce1528",
-            "actions": [],
-            "bindings": []
         }
     ],
     "controlSchemes": [
         {
             "name": "MouseAndKeyboard",
             "bindingGroup": "MouseAndKeyboard",
-            "devices": []
-        },
-        {
-            "name": "Gamepad",
-            "bindingGroup": "Gamepad",
-            "devices": []
+            "devices": [
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": true,
+                    "isOR": false
+                }
+            ]
         },
         {
             "name": "TouchScreen",
             "bindingGroup": "TouchScreen",
-            "devices": []
+            "devices": [
+                {
+                    "devicePath": "<Touchscreen>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
         }
     ]
 }

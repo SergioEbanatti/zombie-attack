@@ -22,6 +22,7 @@ public class ZombieManager : MonoBehaviour
 
     public void OnZombieDied()
     {
-        CurrentZombieCount--;
+        if (CurrentZombieCount > 0)
+            CurrentZombieCount--;
     }
 }

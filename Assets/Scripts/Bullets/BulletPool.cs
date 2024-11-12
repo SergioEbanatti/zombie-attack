@@ -1,56 +1,107 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class BulletPool : MonoBehaviour
 {
     [SerializeField] private Bullet _bulletPrefab;     // Префаб пули с компонентом Bullet
-    [SerializeField] private int _poolSize = 10;  // Размер пула
-    private List<Bullet> bulletPool;
+    [SerializeField] private int _poolSize = 10;       // Начальный размер пула пуль
+    private List<Bullet> _bulletPool;                  // Список для хранения пуль в пуле
 
-    // Синглтон для доступа к пулу пуль
-    public static BulletPool Instance { get; private set; }
+    public static BulletPool Instance { get; private set; }  // Синглтон для доступа к пулу
 
     private void Awake()
     {
-        // Проверяем, есть ли уже экземпляр BulletPool
-        if (Instance == null)
-            Instance = this; // Устанавливаем этот объект как единственный экземпляр
-        else
-            Destroy(gameObject); // Удаляем второй экземпляр
-
-        bulletPool = new List<Bullet>();
-
-        // Инициализируем пул
-        for (int i = 0; i < _poolSize; i++)
-        {
-            Bullet bullet = Instantiate(_bulletPrefab);  // Инстанцируем пулю
-            bullet.gameObject.SetActive(false);         // Делаем пулю неактивной
-            bulletPool.Add(bullet);                     // Добавляем в пул
-        }
+        InitializeSingleton(); 
+        InitializePool();
     }
 
-    // Получаем пулю из пула
+    /// <summary>
+    /// Получить пулю из пула, активируя неактивный объект.
+    /// Если все объекты активны, создаётся новая пуля.
+    /// </summary>
+    /// <param name="position">Позиция, в которой должна появиться пуля</param>
+    /// <returns>Ссылка на объект пули</returns>
     public Bullet GetBulletFromPool(Vector2 position)
     {
-        foreach (var bullet in bulletPool)
+        // Ищем неактивную пулю в пуле
+        foreach (var bullet in _bulletPool)
         {
-            if (!bullet.gameObject.activeInHierarchy)  // Если пуля неактивна
+            // Проверяем, что пуля неактивна и что ссылка на пулю всё ещё существует
+            if (bullet != null && !bullet.gameObject.activeInHierarchy)
             {
-                bullet.transform.position = position;  // Устанавливаем её позицию
-                bullet.gameObject.SetActive(true);      // Активируем пулю
+                ActivateBullet(bullet, position);  // Активируем пулю и возвращаем её
                 return bullet;
             }
         }
 
-        // Если пул пуст, создаём новую пулю
-        Bullet newBullet = Instantiate(_bulletPrefab, position, Quaternion.identity);
-        bulletPool.Add(newBullet);  // Добавляем в пул
-        return newBullet;
+        // Если в пуле нет неактивных пуль, создаём новую и добавляем её в пул
+        return CreateNewBullet(position);
     }
 
-    // Возвращаем пулю обратно в пул
+
+    /// <summary>
+    /// Возвращает пулю обратно в пул, деактивируя её.
+    /// </summary>
+    /// <param name="bullet">Пуля, которую нужно вернуть в пул</param>
     public void ReturnBulletToPool(Bullet bullet)
     {
         bullet.gameObject.SetActive(false);
+
     }
+
+    /// <summary>
+    /// Настройка синглтона для объекта BulletPool.
+    /// Удаляет дублирующий объект, если такой уже существует.
+    /// </summary>
+    private void InitializeSingleton()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+            Destroy(gameObject);
+    }
+
+    /// <summary>
+    /// Инициализирует пул, создавая заданное количество пуль и добавляя их в список.
+    /// </summary>
+    private void InitializePool()
+    {
+        _bulletPool = new List<Bullet>();
+
+        for (int i = 0; i < _poolSize; i++)
+        {
+            // Создаём пулю, деактивируем её и добавляем в пул
+            var bullet = Instantiate(_bulletPrefab);
+            bullet.gameObject.SetActive(false);
+            _bulletPool.Add(bullet);
+        }
+    }
+
+    /// <summary>
+    /// Устанавливает пулю в нужное положение и активирует её.
+    /// </summary>
+    /// <param name="bullet">Пуля, которую нужно активировать</param>
+    /// <param name="position">Позиция активации пули</param>
+    private void ActivateBullet(Bullet bullet, Vector2 position)
+    {
+        bullet.transform.position = position;
+        bullet.gameObject.SetActive(true);
+    }
+
+    /// <summary>
+    /// Создаёт новую пулю и добавляет её в пул, если все объекты заняты.
+    /// </summary>
+    /// <param name="position">Позиция создания новой пули</param>
+    /// <returns>Ссылка на созданную пулю</returns>
+    private Bullet CreateNewBullet(Vector2 position)
+    {
+        var newBullet = Instantiate(_bulletPrefab, position, Quaternion.identity);
+        _bulletPool.Add(newBullet);
+        return newBullet;
+    }
+
 }

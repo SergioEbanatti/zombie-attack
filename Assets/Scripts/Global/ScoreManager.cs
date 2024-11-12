@@ -27,7 +27,6 @@ public class ScoreManager : MonoBehaviour
     {
         CurrentScore += points;
         OnScoreChanged?.Invoke();
-        Debug.Log("Текущий счёт: " + CurrentScore);
 
         UpdateBestScore();
     }
@@ -38,37 +37,32 @@ public class ScoreManager : MonoBehaviour
         if (CurrentScore > BestScore)
         {
             BestScore = CurrentScore;
-            OnBestScoreChanged?.Invoke();
             SaveBestScore();
+            OnBestScoreChanged?.Invoke();
         }
     }
-
 
     public void ResetScore()
     {
         CurrentScore = 0;
         OnScoreChanged?.Invoke();
-        Debug.Log("Текуий счёт сброшен");
     }
 
     private void LoadBestScore()
     {
         BestScore = PlayerPrefs.GetInt("BestScore", 0);
-        Debug.Log("Загружен лучший счёт: " + BestScore);
     }
 
     private void SaveBestScore()
     {
         PlayerPrefs.SetInt("BestScore", BestScore);
         PlayerPrefs.Save();
-        Debug.Log("Лучший счёт сохранён: " + BestScore);
     }
 
     public void ResetBestScore()
     {
         PlayerPrefs.DeleteKey("BestScore"); // Удаляем лучший результат из PlayerPrefs
-        BestScore = 0; // Сбрасываем локальное значение BestScore
+        BestScore = 0;
         OnBestScoreChanged?.Invoke(); // Сигнализируем UI об изменении
-        Debug.Log("Лучший счёт сброшен");
     }
 }

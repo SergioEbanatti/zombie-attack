@@ -4,17 +4,15 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
-    [SerializeField] private GameObject _deathpanel;
-    [SerializeField] private TextMeshProUGUI bestScoreText;  // Ссылка на UI текст для лучшего счёта
-    [SerializeField] private TextMeshProUGUI currentScoreText;  // Ссылка на UI элемент для отображения текущего счёта
+    [SerializeField] private GameObject _deathPanel;
+    [SerializeField] private TextMeshProUGUI _bestScoreText;
+    [SerializeField] private TextMeshProUGUI _currentScoreText;
 
     private void OnEnable()
     {
         // Подписываемся на событие, если GameManager уже существует
         if (GameManager.Instance != null)
-        {
             GameManager.Instance.OnPlayerStatusChanged += DeathPanelActivity;
-        }
 
         // Подписка на событие изменения лучшего счёта
         if (ScoreManager.Instance != null)
@@ -28,34 +26,43 @@ public class UIManager : MonoBehaviour
 
     private void OnDisable()
     {
-        ScoreManager.Instance.OnBestScoreChanged -= UpdateBestScoreUI;
-        GameManager.Instance.OnPlayerStatusChanged -= DeathPanelActivity;
-        ScoreManager.Instance.OnScoreChanged -= UpdateCurrentScoreUI;
+        if (ScoreManager.Instance != null)
+        {
+            ScoreManager.Instance.OnBestScoreChanged -= UpdateBestScoreUI;
+            ScoreManager.Instance.OnScoreChanged -= UpdateCurrentScoreUI;
+        }
+
+        if (GameManager.Instance != null)
+            GameManager.Instance.OnPlayerStatusChanged -= DeathPanelActivity;
     }
 
-    // Метод для обновления текущего счёта на UI
+    // Метод для обновления текущего счёта
     private void UpdateCurrentScoreUI()
     {
-        int currentScore = ScoreManager.Instance.CurrentScore;
-        currentScoreText.text = currentScore.ToString();
+        UpdateScoreUI(_currentScoreText, ScoreManager.Instance.CurrentScore);
     }
 
-    // Метод для обновления UI с лучшим счётом
+    // Метод для обновления лучшего счёта
     private void UpdateBestScoreUI()
     {
-        // Получаем лучший счёт из ScoreManager и отображаем его
-        int bestScore = ScoreManager.Instance.BestScore;
-        bestScoreText.text = bestScore.ToString();
+        UpdateScoreUI(_bestScoreText, ScoreManager.Instance.BestScore);
+    }
+
+    // Универсальный метод для обновления UI текста
+    private void UpdateScoreUI(TextMeshProUGUI scoreText, int score)
+    {
+        if (scoreText != null)
+            scoreText.text = score.ToString();
+        else
+            Debug.LogWarning($"{scoreText.name} не назначен в инспекторе!");
     }
 
     public void DeathPanelActivity()
     {
-        if (_deathpanel != null)
-        {
-            bool currentActivity = _deathpanel.activeInHierarchy;
-            _deathpanel.SetActive(!currentActivity);
-        }
-
+        if (_deathPanel != null)
+            _deathPanel.SetActive(!_deathPanel.activeSelf);
+        else
+            Debug.LogWarning("Панель смерти не назначена в инспекторе!");
     }
 
     public void QuitGame()
@@ -66,8 +73,8 @@ public class UIManager : MonoBehaviour
     public void GameScene()
     {
         // Сброс текущего счета перед запуском игры
-        ScoreManager.Instance.ResetScore();
         SceneManager.LoadScene(1);
+        ScoreManager.Instance.ResetScore();
     }
 
     public void MainMenuScene()

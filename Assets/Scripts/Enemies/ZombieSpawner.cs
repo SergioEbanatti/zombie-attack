@@ -4,8 +4,7 @@
 public class ZombieSpawnInfo
 {
     [SerializeField] private GameObject _zombiePrefab; // Префаб зомби
-    [SerializeField]
-    [Range(0, 100)]
+    [SerializeField, Range(0, 100)]
     private float _chance; // Вероятность спавна (в процентах)
 
     #region Свойства
@@ -32,8 +31,8 @@ public class ZombieSpawner : MonoBehaviour
     private float _decreasingSpawnInterval = 0.1f; //На сколько будет уменьшаться интервал спавна после каждого спавна
 
     [SerializeField]
-    [Tooltip("Рекомендуемое значение: 1")]
-    private float edgePadding = 1f;  // Смещение спавна от краев экрана
+    [Tooltip("Смещение спавна от краев экрана. Рекомендуемое значение: 1")]
+    private float _edgePadding = 1f;  // Смещение спавна от краев экрана
 
     private float[] _cumulativeChances; // Кумулятивный массив вероятностей
     private float _timeSinceLastSpawn = 0f; // Время с последнего спавна
@@ -44,6 +43,8 @@ public class ZombieSpawner : MonoBehaviour
     private void Start()
     {
         _mainCamera = Camera.main;
+        ValidateSpawnChances();
+        InitializeCumulativeChances();
     }
 
     private void Update()
@@ -78,15 +79,15 @@ public class ZombieSpawner : MonoBehaviour
     /// <returns>Точка спавна</returns>
     private Vector3 GetRandomSpawnPosition(SpawnEdge spawnEdge)
     {
-        float halfCameraHeight = _mainCamera.orthographicSize; 
+        float halfCameraHeight = _mainCamera.orthographicSize;
         float halfCameraWidth = halfCameraHeight * _mainCamera.aspect;
 
         // Позиции на разных краях экрана
         return spawnEdge switch
         {
-            SpawnEdge.Left => new Vector3(-halfCameraWidth - edgePadding, Random.Range(-halfCameraHeight, halfCameraHeight), 0f),
-            SpawnEdge.Right => new Vector3(halfCameraWidth + edgePadding, Random.Range(-halfCameraHeight, halfCameraHeight), 0f),
-            SpawnEdge.Top => new Vector3(Random.Range(-halfCameraWidth, halfCameraWidth), halfCameraHeight + edgePadding, 0f),
+            SpawnEdge.Left => new Vector3(-halfCameraWidth - _edgePadding, Random.Range(-halfCameraHeight, halfCameraHeight), 0f),
+            SpawnEdge.Right => new Vector3(halfCameraWidth + _edgePadding, Random.Range(-halfCameraHeight, halfCameraHeight), 0f),
+            SpawnEdge.Top => new Vector3(Random.Range(-halfCameraWidth, halfCameraWidth), halfCameraHeight + _edgePadding, 0f),
             _ => Vector3.zero,
         };
     }
@@ -126,10 +127,6 @@ public class ZombieSpawner : MonoBehaviour
 
         if (Mathf.Abs(totalChance - 100f) > 0.01f)
             Debug.LogError("Сумма вероятностей должна быть равна 100%. Убедитесь, что это так.");
-        else
-            Debug.Log("Всё отлично! Сумма вероятностей ровно 100%");
-
-
     }
 
     /// <summary>
@@ -137,6 +134,8 @@ public class ZombieSpawner : MonoBehaviour
     /// </summary>
     private void InitializeCumulativeChances()
     {
+        if (_zombieSpawnInfos == null || _zombieSpawnInfos.Length == 0) return;
+
         _cumulativeChances = new float[_zombieSpawnInfos.Length];
         var cumulative = 0f;
 

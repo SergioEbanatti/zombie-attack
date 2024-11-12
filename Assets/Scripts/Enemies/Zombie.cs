@@ -1,6 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(ZombieMovement))]
+[RequireComponent(typeof(HealthComponent))]
 
 public class Zombie : MonoBehaviour
 {
@@ -11,13 +12,13 @@ public class Zombie : MonoBehaviour
     [Header("Очки")]
     [SerializeField] private int _scoreValue = 7;
 
-    private DamageHandler _damageHandler;
+    private HealthComponent _damageHandler;
 
     #region Свойства
     public float MoveSpeed
     {
-        get { return _moveSpeed; }
-        set { _moveSpeed = Mathf.Max(0, value); } // Защита от отрицательных значений
+        get => _moveSpeed;
+        set => _moveSpeed = Mathf.Max(0, value); // Защита от отрицательных значений
     }
 
     public int Damage => _damage;
@@ -26,33 +27,52 @@ public class Zombie : MonoBehaviour
 
     private void Awake()
     {
-        _damageHandler = GetComponent<DamageHandler>(); // Получаем ссылку на DamageHandler
-        _damageHandler.OnDeath += HandleDeath; // Подписываемся на событие смерти
+        _damageHandler = GetComponent<HealthComponent>();
+    }
+
+    private void OnEnable()
+    {
+        _damageHandler.OnDeath += HandleDeath;
+    }
+
+    private void OnDisable()
+    {
+        UnsubscribeFromDeathEvent();
+    }
+
+
+    private void OnDestroy()
+    {
+        UnsubscribeFromDeathEvent(); 
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.TryGetComponent<IDamageable>(out var damageable))
+        if (other.TryGetComponent(out IDamageable damageable))
             damageable.TakeDamage(_damage);
     }
 
+    /// <summary>
+    /// Отписка от события
+    /// </summary>
+    private void UnsubscribeFromDeathEvent()
+    {
+        // Отписка от события
+        _damageHandler.OnDeath -= HandleDeath;
+    }
 
     private void HandleDeath()
     {
-        if (ScoreManager.Instance != null)
-        {
-            ScoreManager.Instance.AddScore(_scoreValue);
-        }
-        else
-        {
-            Debug.LogWarning("ScoreManager не найден!");
-        }
+        AddScoreToManager();
         ZombieManager.Instance.OnZombieDied(); // Обработка смерти зомби
     }
 
-    private void OnDestroy()
+    private void AddScoreToManager()
     {
-        //ScoreManager.Instance.AddScore(_scoreValue);
-        _damageHandler.OnDeath -= HandleDeath; // Отписка от события, если объект уничтожен
+        if (ScoreManager.Instance != null)
+            ScoreManager.Instance.AddScore(_scoreValue);
+        else
+            Debug.LogWarning("ScoreManager не найден!");
     }
+
 }

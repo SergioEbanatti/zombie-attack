@@ -5,18 +5,19 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     private bool _gameStarted = false;
-    private bool _isGamePaused = false;
     private bool _hasPlayer = false;
 
     #region Свойства
     public static GameManager Instance { get; private set; }
     public Transform PlayerTransform { get; private set; }
     public bool HasPlayer => _hasPlayer;
-    public bool IsGameStarted => _gameStarted; 
-    public bool IsGamePaused => _isGamePaused;
+    public bool IsGameStarted => _gameStarted;
     #endregion
 
     public event Action OnPlayerStatusChanged;
+
+    private const float GameTimeScale = 1f;
+    private const float PausedTimeScale = 0f;
 
     private void Awake()
     {
@@ -29,24 +30,26 @@ public class GameManager : MonoBehaviour
         else
         Destroy(gameObject);
 
-        // Подписываемся на событие загрузки сцены
+    }
+
+    private void OnEnable()
+    {
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    private void OnDisable()
     {
-        if (scene.buildIndex == 1)
-            StartGame();
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     // Метод для регистрации игрока
     public void RegisterPlayer(Transform playerTransform)
     {
+        if (_hasPlayer) return; // Игрок уже зарегистрирован
         PlayerTransform = playerTransform;
         _hasPlayer = true;
         OnPlayerStatusChanged?.Invoke(); // Срабатывает, когда игрок появляется
     }
-
 
     // Метод для начала игры
     public void StartGame()
@@ -54,42 +57,21 @@ public class GameManager : MonoBehaviour
         if (!_gameStarted)
         {
             _gameStarted = true;
-            SetGameTimeScale(1); // Запускаем время (игра начинается)
-        }
-    }
-
-    // Метод для паузы игры
-    public void PauseGame()
-    {
-        if (_gameStarted && !_isGamePaused)
-        {
-            _isGamePaused = true;
-            SetGameTimeScale(0); // Останавливаем время
-        }
-    }
-
-    // Метод для возобновления игры
-    public void ResumeGame()
-    {
-        if (_gameStarted && _isGamePaused)
-        {
-            _isGamePaused = false;
-            SetGameTimeScale(1); // Включаем нормальное время
+            SetGameTimeScale(GameTimeScale); // Запускаем время (игра начинается)
         }
     }
 
     public void EndGame()
     {
         _hasPlayer = false;
-        OnPlayerStatusChanged?.Invoke(); // Срабатывает, когда игрок умирает
         _gameStarted = false;
-        SetGameTimeScale(0);
+        SetGameTimeScale(PausedTimeScale);
+        OnPlayerStatusChanged?.Invoke();
     }
-
-    public void HandlePlayerDeath()
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // Логика обработки смерти игрока
-        Debug.Log("Игра завершена! Игрок погиб.");
+        if (scene.buildIndex == 1)
+            StartGame();
     }
 
     private void SetGameTimeScale(float scale)

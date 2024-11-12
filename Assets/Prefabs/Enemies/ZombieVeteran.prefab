@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 8273604078917586806}
   - component: {fileID: 3501547360378663932}
   - component: {fileID: 5532016533124247019}
+  - component: {fileID: 655859068034245663}
   - component: {fileID: 6647419549818639498}
   - component: {fileID: 2805989856350420184}
-  - component: {fileID: 655859068034245663}
-  - component: {fileID: 6230868718469360722}
+  - component: {fileID: 5421457815469861621}
   m_Layer: 8
   m_Name: ZombieVeteran
   m_TagString: Untagged
@@ -123,35 +123,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.215
---- !u!114 &6647419549818639498
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 222757156563510391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f5717e86f365db468aa72da4803fe22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2805989856350420184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 222757156563510391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3e74020d3e054345b33452ff6d47b6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _moveSpeed: 3
-  _health: 10
-  _damage: 1
-  scoreValue: 12
+  m_Radius: 0.3
 --- !u!50 &655859068034245663
 Rigidbody2D:
   serializedVersion: 4
@@ -179,7 +151,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &6230868718469360722
+--- !u!114 &6647419549818639498
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -188,7 +160,34 @@ MonoBehaviour:
   m_GameObject: {fileID: 222757156563510391}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8cb122533d6f814093ba6eafe359ddd, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f5717e86f365db468aa72da4803fe22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2805989856350420184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222757156563510391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3e74020d3e054345b33452ff6d47b6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _moveSpeed: 3
+  _damage: 1
+  _scoreValue: 12
+--- !u!114 &5421457815469861621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222757156563510391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724baafedbf27fb45a4fa916e97217cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 10
